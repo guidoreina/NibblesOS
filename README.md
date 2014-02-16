@@ -27,7 +27,7 @@ With VirtualBox or VMWare create a new virtual machine with an unknown operating
 
 
 
-### Differences with the original game
+### Differences from the original game
 * Up to four players can play simultaneously.
 * Monochrome mode is not supported.
 * Sound has not been implemented.

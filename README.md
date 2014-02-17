@@ -40,8 +40,8 @@ Introduction screen:
 
 Inputs screen:
 
-![alt text](https://github.com/guidoreina/nibblesos/raw/master/screenshots/inputs.png "Introduction screen")
+![alt text](https://github.com/guidoreina/nibblesos/raw/master/screenshots/inputs.png "Inputs screen")
 
 Playing:
 
-![alt text](https://github.com/guidoreina/nibblesos/raw/master/screenshots/playing.png "Introduction screen")
+![alt text](https://github.com/guidoreina/nibblesos/raw/master/screenshots/playing.png "Playing")

@@ -27,7 +27,7 @@ With VirtualBox or VMWare create a new virtual machine with an unknown operating
 
 
 
-### Differences with the original game
+### Differences from the original game
 * Up to four players can play simultaneously.
 * Monochrome mode is not supported.
 * Sound has not been implemented.
@@ -40,8 +40,8 @@ Introduction screen:
 
 Inputs screen:
 
-![alt text](https://github.com/guidoreina/nibblesos/raw/master/screenshots/inputs.png "Introduction screen")
+![alt text](https://github.com/guidoreina/nibblesos/raw/master/screenshots/inputs.png "Inputs screen")
 
 Playing:
 
-![alt text](https://github.com/guidoreina/nibblesos/raw/master/screenshots/playing.png "Introduction screen")
+![alt text](https://github.com/guidoreina/nibblesos/raw/master/screenshots/playing.png "Playing")

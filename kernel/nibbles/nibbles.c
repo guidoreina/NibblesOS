@@ -42,10 +42,10 @@ static int game_over;
 void nibbles_play(void)
 {
 	/* Set snakes' names and colors. */
-	snake_init(&snakes[0], "Sammy", 0, PLAYER_1_COLOR);
-	snake_init(&snakes[1], "Jake", 1, PLAYER_2_COLOR);
-	snake_init(&snakes[2], "Tom", 2, PLAYER_3_COLOR);
-	snake_init(&snakes[3], "Jerry", 3, PLAYER_4_COLOR);
+	snake_init(&snakes[0], "Winter", 0, PLAYER_1_COLOR);
+	snake_init(&snakes[1], "Summer", 1, PLAYER_2_COLOR);
+	snake_init(&snakes[2], "Autumn", 2, PLAYER_3_COLOR);
+	snake_init(&snakes[3], "Spring", 3, PLAYER_4_COLOR);
 
 	/* Disable cursor. */
 	curs_set(0);
@@ -158,21 +158,10 @@ void prepare_level(unsigned level)
 			snakes[3].initial_y = 35; snakes[3].initial_x = 23; snakes[3].initial_dir = DIR_RIGHT;
 			break;
 		case 6:
-			mvvline(1, 9, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(1, 19, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(1, 29, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(1, 39, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(1, 49, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(1, 59, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(1, 69, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-
-			mvvline(15, 9, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(15, 19, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(15, 29, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(15, 39, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(15, 49, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(15, 59, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
-			mvvline(15, 69, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
+			for (i = 9; i <= 69; i += 10) {
+				mvvline(1, i, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
+				mvvline(15, i, MAKE_CHARACTER(0xdb, WALL_COLOR, BACKGROUND_COLOR), 10);
+			}
 
 			snakes[0].initial_y = 7; snakes[0].initial_x = 65; snakes[0].initial_dir = DIR_DOWN;
 			snakes[1].initial_y = 43; snakes[1].initial_x = 15; snakes[1].initial_dir = DIR_UP;
